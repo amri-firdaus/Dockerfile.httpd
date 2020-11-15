@@ -1,6 +1,6 @@
 ##FROM registry.redhat.io/rhel8/httpd-24
-##FROM httpd:2.4
-FROM rhel7:latest
+FROM httpd:2.4
+##FROM rhel7:latest
 ##USER root
 #COPY ./public-html/ /usr/local/apache2/htdocs/
 ##FROM centos:latest
