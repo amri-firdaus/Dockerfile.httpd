@@ -1,4 +1,5 @@
-FROM centos:latest
+FROM httpd:2.4
+##FROM centos:latest
 RUN yum -y install httpd
 COPY index.html /var/www/html/
 COPY servername.conf /etc/httpd/conf.d/
