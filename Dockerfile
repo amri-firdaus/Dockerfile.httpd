@@ -1,6 +1,7 @@
-FROM httpd:2.4
+FROM registry.redhat.io/rhel8/httpd-24
+##FROM httpd:2.4
 ##FROM rhel7:latest
-USER root
+##USER root
 #COPY ./public-html/ /usr/local/apache2/htdocs/
 ##FROM centos:latest
 ##RUN yum -y install httpd
@@ -10,3 +11,4 @@ COPY servername.conf /etc/httpd/conf.d/
 ##RUN chmod 755 /var/www/cgi-bin/action
 EXPOSE 80
 ##CMD usr/sbin/httpd -D FOREGROUND
+CMD run-httpd
