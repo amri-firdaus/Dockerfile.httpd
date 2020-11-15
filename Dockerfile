@@ -10,4 +10,5 @@ COPY servername.conf /etc/httpd/conf.d/
 ##RUN chmod 755 /var/www/cgi-bin/action
 EXPOSE 80
 ##CMD usr/sbin/httpd -D FOREGROUND
-CMD run-httpd
+##CMD run-httpd
+CMD ["/usr/bin/run-httpd"]
